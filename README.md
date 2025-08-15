@@ -2,7 +2,7 @@
 
 This project is a personal portfolio website built as the final project for the first module of the Academlo bootcamp. It showcases my projects, skills, and certifications.
 
-The live version can be viewed [here](https://your-deployment-link.com).
+The live version can be viewed [here](https://jhon-portfolio.netlify.app).
 
 ## ✨ Features
 
@@ -42,11 +42,11 @@ The live version can be viewed [here](https://your-deployment-link.com).
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/your-username/academlo-portfolio.git
+    git clone https://github.com/ArtiyxDev/Academlo_Portfolio
     ```
 2.  Navigate to the project directory:
     ```bash
-    cd academlo-portfolio
+    cd Academlo_Portfolio
     ```
 3.  Install the dependencies:
     ```bash
