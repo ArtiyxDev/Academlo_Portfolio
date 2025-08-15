@@ -1,0 +1,117 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+   --shadow-expose-sm: 0 0 10px 2px var(--color-purple-200);
+}
+
+@layer theme {
+   .text-main {
+      background: #9326f3;
+      background: -webkit-linear-gradient(
+         90deg,
+         #9326f3 0%,
+         #9e3af6 50%,
+         #be33fe 100%
+      );
+      background: linear-gradient(90deg, #9326f3 0%, #9e3af6 50%, #be33fe 100%);
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+   }
+}
+
+body {
+   background:
+      radial-gradient(circle farthest-side at 0% 50%, #ffffff 23.5%, #0000 0)
+         14.7px 21px,
+      radial-gradient(
+            circle farthest-side at 0% 50%,
+            rgba(225, 107, 255, 0.15) 24%,
+            #0000 0
+         )
+         13.3px 21px,
+      linear-gradient(#ffffff 14%, #0000 0, #0000 85%, #ffffff 0) 0 0,
+      linear-gradient(
+            150deg,
+            #ffffff 24%,
+            rgba(225, 107, 255, 0.15) 0,
+            rgba(225, 107, 255, 0.15) 26%,
+            #0000 0,
+            #0000 74%,
+            rgba(225, 107, 255, 0.15) 0,
+            rgba(225, 107, 255, 0.15) 76%,
+            #ffffff 0
+         )
+         0 0,
+      linear-gradient(
+            30deg,
+            #ffffff 24%,
+            rgba(225, 107, 255, 0.15) 0,
+            rgba(225, 107, 255, 0.15) 26%,
+            #0000 0,
+            #0000 74%,
+            rgba(225, 107, 255, 0.15) 0,
+            rgba(225, 107, 255, 0.15) 76%,
+            #ffffff 0
+         )
+         0 0,
+      linear-gradient(
+            90deg,
+            rgba(225, 107, 255, 0.15) 2%,
+            #ffffff 0,
+            #ffffff 98%,
+            rgba(225, 107, 255, 0.15) 0%
+         )
+         0 0 #ffffff;
+   background-size: 28px 42px;
+   background-color: #ffffff;
+
+   @variant dark {
+      background:
+         radial-gradient(circle farthest-side at 0% 50%, #202020 23.5%, #0000 0)
+            14.7px 21px,
+         radial-gradient(
+               circle farthest-side at 0% 50%,
+               rgba(225, 225, 250, 0.03) 24%,
+               #0000 0
+            )
+            13.3px 21px,
+         linear-gradient(#202020 14%, #0000 0, #0000 85%, #202020 0) 0 0,
+         linear-gradient(
+               150deg,
+               #202020 24%,
+               rgba(225, 225, 250, 0.03) 0,
+               rgba(225, 225, 250, 0.03) 26%,
+               #0000 0,
+               #0000 74%,
+               rgba(225, 225, 250, 0.03) 0,
+               rgba(225, 225, 250, 0.03) 76%,
+               #202020 0
+            )
+            0 0,
+         linear-gradient(
+               30deg,
+               #202020 24%,
+               rgba(225, 225, 250, 0.03) 0,
+               rgba(225, 225, 250, 0.03) 26%,
+               #0000 0,
+               #0000 74%,
+               rgba(225, 225, 250, 0.03) 0,
+               rgba(225, 225, 250, 0.03) 76%,
+               #202020 0
+            )
+            0 0,
+         linear-gradient(
+               90deg,
+               rgba(225, 225, 250, 0.03) 2%,
+               #202020 0,
+               #202020 98%,
+               rgba(225, 225, 250, 0.03) 0%
+            )
+            0 0 #202020;
+      background-size: 28px 42px;
+      background-color: #202020;
+   }
+}

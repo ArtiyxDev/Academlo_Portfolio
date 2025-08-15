@@ -1,0 +1,49 @@
+{
+   "name": "academlo-portfolio",
+   "private": true,
+   "version": "0.0.0",
+   "type": "module",
+   "scripts": {
+      "dev": "vite",
+      "build": "tsc -b && vite build",
+      "lint": "eslint .",
+      "preview": "vite preview"
+   },
+   "dependencies": {
+      "@emailjs/browser": "^4.4.1",
+      "@lottiefiles/react-lottie-player": "^3.6.0",
+      "@tailwindcss/vite": "^4.1.11",
+      "clsx": "^2.1.1",
+
+      "motion": "^12.23.12",
+      "react": "^19.1.0",
+      "react-country-flag": "^3.1.0",
+      "react-dom": "^19.1.0",
+      "react-hot-toast": "^2.5.2",
+
+      "react-icons": "^5.5.0",
+
+      "react-router": "^7.8.0",
+      "tailwind-merge": "^3.3.1",
+      "tailwindcss": "^4.1.11"
+   },
+   "devDependencies": {
+      "@eslint/js": "^9.30.1",
+      "@types/react": "^19.1.8",
+      "@types/react-dom": "^19.1.6",
+      "@vitejs/plugin-react-swc": "^3.10.2",
+      "eslint": "^9.32.0",
+      "eslint-config-prettier": "^10.1.8",
+      "eslint-plugin-prettier": "^5.5.3",
+      "eslint-plugin-react-hooks": "^5.2.0",
+      "eslint-plugin-react-refresh": "^0.4.20",
+      "eslint-plugin-tailwindcss": "^3.18.2",
+      "globals": "^16.3.0",
+      "prettier": "^3.6.2",
+      "prettier-eslint": "^16.4.2",
+      "prettier-plugin-tailwindcss": "^0.6.14",
+      "typescript": "~5.8.3",
+      "typescript-eslint": "^8.35.1",
+      "vite": "^7.0.4"
+   }
+}
