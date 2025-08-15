@@ -30,7 +30,7 @@ export default function PortfolioSection({
                   icon={BiCode}
                   title={t('portfolio.card.project')}
                   description="Little webs from a junior"
-                  count={0}
+                  count={1}
                />
             </ScrollReveal>
             <ScrollReveal className="w-full">
@@ -38,7 +38,7 @@ export default function PortfolioSection({
                   icon={LiaCertificateSolid}
                   title={t('portfolio.card.certificate')}
                   description={t('portfolio.card.certificate.description')}
-                  count={0}
+                  count={1}
                />
             </ScrollReveal>
             <ScrollReveal className="w-full">
