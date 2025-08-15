@@ -5,12 +5,12 @@ import ContactSection from './components/sections/ContactSection';
 import HomeSection from './components/sections/HomeSection';
 import PortfolioSection from './components/sections/portfolio/PortfolioSection';
 import PortfolioLoader from './components/portfolio-loader';
-import { LanguageProvider, useLanguage } from './i18n';
+import { LanguageProvider } from './i18n';
 
 import './App.css';
+import Footer from './components/sections/Footer';
 function App() {
    const [loading, setLoading] = useState(true);
-   const { t } = useLanguage();
 
    useEffect(() => {
       const timer = setTimeout(() => {
@@ -38,14 +38,7 @@ function App() {
                         <ContactSection />
                      </div>
                   </main>
-                  <footer>
-                     <div className="container mx-auto py-4 text-center">
-                        <p className="text-sm text-gray-500">
-                           &copy; {new Date().getFullYear()}{' '}
-                           {t('footer.copyright')}
-                        </p>
-                     </div>
-                  </footer>
+                  <Footer />
                   <div className="absolute inset-0 backdrop-blur-[1px]"></div>
                </>
             )}
