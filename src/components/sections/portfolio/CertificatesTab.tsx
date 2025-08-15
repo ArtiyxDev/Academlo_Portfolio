@@ -17,7 +17,7 @@ export default function CertificatesTab() {
                   className="flex flex-col gap-4 overflow-hidden rounded-lg border border-gray-400 bg-purple-50/80 px-3 py-3 dark:border-gray-600 dark:bg-slate-700"
                >
                   <img
-                     src={`../src/assets/previews/certificates/${certificate.poster}`}
+                     src={`https://i.postimg.cc/fRMPVrv3/one.png`}
                      alt={`${certificate.name} certificate`}
                   />
                </a>

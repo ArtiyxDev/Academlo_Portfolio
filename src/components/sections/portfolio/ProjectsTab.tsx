@@ -20,7 +20,7 @@ export default function ProjectsTab({ className = '' }: ShowcaseTabsProps) {
                   className="flex flex-col gap-4 overflow-hidden rounded-lg border border-gray-400 bg-purple-50/80 px-3 py-3 dark:border-gray-600 dark:bg-slate-700"
                >
                   <img
-                     src={`../src/assets/previews/projects/${project.poster}`}
+                     src={`https://i.postimg.cc/G2fKzMYj/petvet.png`}
                      alt={project.title}
                      className="w-full rounded-lg"
                   />

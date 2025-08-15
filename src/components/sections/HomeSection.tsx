@@ -77,7 +77,10 @@ export default function HomeSection({
             </p>
          </div>
          <div className="relative my-8 flex h-96 items-center justify-center lg:w-1/2">
-            <AnimatedAvatar src="src/assets/avatar.png" icons={avatarIcons} />
+            <AnimatedAvatar
+               src="https://i.postimg.cc/43bjLTNQ/avatar.png"
+               icons={avatarIcons}
+            />
          </div>
       </motion.section>
    );
