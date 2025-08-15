@@ -94,6 +94,7 @@ export const es: Translations = {
    loading: 'Cargando...',
    'error.general': 'Algo salió mal',
    'success.general': 'Operación exitosa',
+   'footer.copyright': 'ArtiyxDev. Todos los derechos reservados.',
 };
 
 export default es;

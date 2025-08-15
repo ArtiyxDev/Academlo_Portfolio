@@ -93,4 +93,5 @@ export const en: Translations = {
    loading: 'Loading...',
    'error.general': 'Something went wrong',
    'success.general': 'Operation successful',
+   'footer.copyright': 'ArtiyxDev. All rights reserved.',
 };
