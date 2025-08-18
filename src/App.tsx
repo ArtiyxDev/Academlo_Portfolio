@@ -4,7 +4,7 @@ import AboutSection from './components/sections/AboutSection';
 import ContactSection from './components/sections/ContactSection';
 import HomeSection from './components/sections/HomeSection';
 import PortfolioSection from './components/sections/portfolio/PortfolioSection';
-import PortfolioLoader from './components/portfolio-loader';
+import PortfolioLoader from './components/PortfolioLoader';
 import { LanguageProvider } from './i18n';
 
 import './App.css';
