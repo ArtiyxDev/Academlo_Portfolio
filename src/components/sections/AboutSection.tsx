@@ -16,7 +16,10 @@ export default function AboutSection({
    const { t } = useLanguage();
    return (
       <ScrollReveal delay={1}>
-         <section id={id} className={'px-8 pt-8 pb-6 text-center ' + className}>
+         <section
+            id={id}
+            className={'scroll-mt-8 px-8 pt-8 pb-6 text-center ' + className}
+         >
             <ScrollReveal className="inline-block">
                <h2 className="bg-gradient-to-r from-purple-800 via-purple-600 via-30% to-purple-400 bg-clip-text text-5xl font-semibold text-transparent">
                   {t('about.title')}

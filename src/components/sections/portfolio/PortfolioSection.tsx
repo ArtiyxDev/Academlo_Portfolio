@@ -23,7 +23,7 @@ export default function PortfolioSection({
       'projects' | 'certificates' | 'tech'
    >('projects');
    return (
-      <section id={id} className={'px-8 pt-8 pb-6 ' + className}>
+      <section id={id} className={'scroll-mt-10 px-8 pt-8 pb-6 ' + className}>
          <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-around">
             <ScrollReveal className="w-full">
                <PortfolioTopCard

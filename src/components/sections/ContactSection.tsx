@@ -45,7 +45,10 @@ export default function ContactSection({
    ];
 
    return (
-      <section className={'px-8 pt-8 pb-6 text-center ' + className} id={id}>
+      <section
+         className={'scroll-mt-8 px-8 pt-8 pb-6 text-center ' + className}
+         id={id}
+      >
          <ScrollReveal>
             <h2 className="bg-gradient-to-r from-purple-800 via-purple-600 via-30% to-purple-400 bg-clip-text text-5xl font-semibold text-transparent">
                {t('contact.title')}
