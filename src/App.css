@@ -23,6 +23,7 @@
 }
 
 body {
+   scroll-behavior: smooth;
    background:
       radial-gradient(circle farthest-side at 0% 50%, #ffffff 23.5%, #0000 0)
          14.7px 21px,
