@@ -38,12 +38,12 @@ export default function AboutSection({
             </ScrollReveal>
             <ScrollReveal className="flex w-full flex-col items-center justify-between gap-2 pt-8 text-white md:flex-row">
                <button
-                  className="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-purple-600 to-purple-500 py-3"
+                  className="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-purple-600 to-purple-500 py-3 transition-shadow duration-300 hover:cursor-pointer hover:shadow-md dark:bg-purple-400 dark:text-purple-200 hover:dark:shadow-purple-300/20"
                   onClick={() => toast('Soon', { icon: <BiTime size={24} /> })}
                >
                   <BiFile size={24} /> {t('about.cv')}
                </button>
-               <button className="flex w-full items-center justify-center gap-2 rounded-xl border border-purple-300 bg-purple-300/60 py-3 text-purple-600 dark:bg-purple-300/40 dark:text-purple-200">
+               <button className="flex w-full items-center justify-center gap-2 rounded-xl border border-purple-300 bg-purple-300/60 py-3 text-purple-600 transition-shadow duration-300 hover:cursor-pointer hover:shadow-md dark:bg-purple-300/40 dark:text-purple-200 dark:hover:shadow-purple-300/20">
                   <BiCode size={24} /> {t('about.projects')}
                </button>
             </ScrollReveal>
