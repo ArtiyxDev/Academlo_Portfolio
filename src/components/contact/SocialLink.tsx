@@ -6,6 +6,7 @@ interface SocialLinkProps {
    username: string;
    bgColor: string;
    iconColor: string;
+   className?: string;
 }
 
 export const SocialLink = ({
@@ -14,9 +15,12 @@ export const SocialLink = ({
    username,
    bgColor,
    iconColor,
+   className = '',
 }: SocialLinkProps) => {
    return (
-      <div className="flex w-full gap-2 rounded-lg bg-purple-200/30 p-2 dark:bg-slate-800/30">
+      <div
+         className={`flex w-full gap-2 rounded-lg bg-purple-200/30 p-2 dark:bg-slate-800/30 ${className}`}
+      >
          <span className={`rounded-lg ${bgColor} p-3`}>
             <Icon size={32} className={iconColor} />
          </span>
