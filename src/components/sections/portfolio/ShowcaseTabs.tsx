@@ -147,7 +147,7 @@ export default function ShowcaseTabs({
                   onClick={() => handleTabClick(tab.id)}
                   onKeyDown={(e) => handleKeyDown(e, tab.id)}
                   className={clsx(
-                     'relative z-10 flex w-1/3 flex-col items-center justify-center gap-2 rounded-lg px-2 py-3 transition-all duration-300 ease-out',
+                     'relative z-10 flex w-1/3 flex-col items-center justify-center gap-2 rounded-lg px-2 py-3 transition-all duration-300 ease-out hover:cursor-pointer',
                      'focus-visible:ring-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2',
                      'hover:bg-purple-50/30',
                      isActive && 'text-primary'
