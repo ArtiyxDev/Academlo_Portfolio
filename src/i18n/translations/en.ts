@@ -76,18 +76,33 @@ export const en: Translations = {
 
    // Form Validation
    'validation.required': 'This field is required',
+   'validation.name.required': 'Name is required',
+   'validation.email.required': 'Email is required',
+   'validation.email.invalid': 'Please enter a valid email address',
+   'validation.message.required': 'Message is required',
    'validation.email': 'Invalid email address',
    'validation.minLength': 'Must be at least {0} characters',
 
    // Project Cards
-   'project.viewDemo': 'View demo',
-   'project.viewCode': 'View code',
+   'project.viewDemo': 'Live Demo',
+   'project.viewCode': 'Details',
    'project.technologies': 'Technologies:',
 
    // Social Links
    'social.github': 'Follow me on GitHub',
    'social.linkedin': 'Connect with me on LinkedIn',
    'social.twitter': 'Follow me on Twitter',
+
+   // Contact Form Messages
+   'contact.form.success': 'Message sent successfully!',
+   'contact.form.error': 'Failed to send message. Please try again.',
+
+   // Portfolio Loader
+   'loader.portfolio': 'Loading portfolio...',
+   'loader.initializing': 'Initializing portfolio...',
+   'loader.projects': 'Loading projects...',
+   'loader.experience': 'Preparing experience...',
+   'loader.ready': 'Almost ready...',
 
    // General
    loading: 'Loading...',

@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
+import { useLanguage } from '../i18n/hooks';
 
 interface PortfolioLoaderProps {
    onComplete?: () => void;
    duration?: number;
-   loadingText?: string;
    showPercentage?: boolean;
    variant?: 'minimal' | 'detailed';
 }
@@ -11,18 +11,18 @@ interface PortfolioLoaderProps {
 export default function PortfolioLoader({
    onComplete,
    duration = 3000,
-   loadingText = 'Loading portfolio...',
    showPercentage = true,
    variant = 'minimal',
 }: PortfolioLoaderProps) {
    const [progress, setProgress] = useState(0);
    const [currentMessage, setCurrentMessage] = useState(0);
+   const { t } = useLanguage();
 
    const loadingMessages = [
-      'Initializing portfolio...',
-      'Loading projects...',
-      'Preparing experience...',
-      'Almost ready...',
+      t('loader.initializing'),
+      t('loader.projects'),
+      t('loader.experience'),
+      t('loader.ready'),
    ];
 
    useEffect(() => {
@@ -90,7 +90,7 @@ export default function PortfolioLoader({
                <p className="text-muted-foreground text-sm">
                   {variant === 'detailed'
                      ? loadingMessages[currentMessage]
-                     : loadingText}
+                     : t('loader.portfolio')}
                </p>
                {showPercentage && (
                   <p className="text-muted-foreground font-mono text-xs">

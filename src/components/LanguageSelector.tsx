@@ -18,8 +18,7 @@ export default function LanguageSelector() {
    return (
       <motion.button
          onClick={toggleLanguage}
-         className="flex items-center gap-2 rounded p-2 transition-colors duration-300 hover:bg-purple-600/10 dark:text-white dark:hover:bg-purple-800/10"
-         whileHover={{ scale: 1.05 }}
+         className="flex cursor-pointer items-center gap-2 rounded p-2 transition-colors duration-300 hover:bg-purple-600/10 dark:text-white dark:hover:bg-purple-800/10"
          whileTap={{ scale: 0.95 }}
       >
          <ReactCountryFlag

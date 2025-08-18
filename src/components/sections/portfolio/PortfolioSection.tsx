@@ -29,7 +29,7 @@ export default function PortfolioSection({
                <PortfolioTopCard
                   icon={BiCode}
                   title={t('portfolio.card.project')}
-                  description="Little webs from a junior"
+                  description={t('portfolio.card.project.description')}
                   count={1}
                />
             </ScrollReveal>

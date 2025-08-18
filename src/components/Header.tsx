@@ -95,7 +95,7 @@ export default function Header({ className = '' }: HeaderProps) {
                {/* Theme Toggle */}
                <div className="flex items-center gap-1 rounded p-2 transition-colors duration-300 hover:bg-purple-600/10 dark:text-white dark:hover:bg-purple-800/10">
                   <ThemeToggle />
-               </div>{' '}
+               </div>
                {/* Mobile Hamburger Menu */}
                <HamburgerMenu isOpen={isMenuOpen} toggleMenu={toggleMenu} />
             </div>

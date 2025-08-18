@@ -2,12 +2,15 @@ import clsx from 'clsx';
 import { projects } from '../../../data/projects';
 import { IoArrowForwardOutline, IoOpenOutline } from 'react-icons/io5';
 import ScrollReveal from '../../ScrollReveal';
+import { useLanguage } from '../../../i18n/hooks';
 
 interface ShowcaseTabsProps {
    className?: string;
 }
 
 export default function ProjectsTab({ className = '' }: ShowcaseTabsProps) {
+   const { t } = useLanguage();
+
    return (
       <ScrollReveal
          direction="right"
@@ -37,7 +40,7 @@ export default function ProjectsTab({ className = '' }: ShowcaseTabsProps) {
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 text-blue-500"
                      >
-                        Live Demo
+                        {t('project.viewDemo')}
                         <IoOpenOutline />
                      </a>
                      <a
@@ -46,7 +49,7 @@ export default function ProjectsTab({ className = '' }: ShowcaseTabsProps) {
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 rounded-lg border border-gray-200 bg-gray-300 px-2 py-1 hover:bg-gray-400 dark:border-slate-500 dark:bg-slate-800 dark:text-white hover:dark:bg-slate-600"
                      >
-                        Details <IoArrowForwardOutline />
+                        {t('project.viewCode')} <IoArrowForwardOutline />
                      </a>
                   </div>
                </ScrollReveal>

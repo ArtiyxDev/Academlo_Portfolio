@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useLanguage } from '../i18n/hooks';
 import useEmailJS from './useEmailJS';
 
 interface ContactForm {
@@ -8,6 +9,7 @@ interface ContactForm {
 }
 
 export const useContactForm = () => {
+   const { t } = useLanguage();
    const [formData, setFormData] = useState<ContactForm>({
       name: '',
       email: '',
@@ -21,17 +23,17 @@ export const useContactForm = () => {
       const newErrors: Partial<ContactForm> = {};
 
       if (!formData.name.trim()) {
-         newErrors.name = 'Name is required';
+         newErrors.name = t('validation.name.required');
       }
 
       if (!formData.email.trim()) {
-         newErrors.email = 'Email is required';
+         newErrors.email = t('validation.email.required');
       } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-         newErrors.email = 'Please enter a valid email address';
+         newErrors.email = t('validation.email.invalid');
       }
 
       if (!formData.message.trim()) {
-         newErrors.message = 'Message is required';
+         newErrors.message = t('validation.message.required');
       }
 
       setErrors(newErrors);

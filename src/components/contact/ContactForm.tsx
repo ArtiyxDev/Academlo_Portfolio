@@ -14,9 +14,9 @@ export const ContactForm = () => {
       e.preventDefault();
       const success = await handleSubmit();
       if (success) {
-         toast.success('Message sent successfully!');
+         toast.success(t('contact.form.success'));
       } else {
-         toast.error('Failed to send message. Please try again.');
+         toast.error(t('contact.form.error'));
       }
    };
 
