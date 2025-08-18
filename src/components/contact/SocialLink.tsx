@@ -19,7 +19,7 @@ export const SocialLink = ({
 }: SocialLinkProps) => {
    return (
       <div
-         className={`flex w-full gap-2 rounded-lg bg-purple-200/30 p-2 dark:bg-slate-800/30 ${className}`}
+         className={`flex w-full flex-wrap gap-2 rounded-lg bg-purple-200/30 p-2 sm:w-auto sm:grow dark:bg-slate-800/30 ${className}`}
       >
          <span className={`rounded-lg ${bgColor} p-3`}>
             <Icon size={32} className={iconColor} />
