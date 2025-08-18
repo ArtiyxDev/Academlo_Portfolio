@@ -14,6 +14,10 @@
    -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+   scroll-behavior: smooth;
+}
+
 input:focus,
 textarea:focus,
 select:focus {
