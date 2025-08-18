@@ -60,7 +60,7 @@ export const ContactForm = () => {
          <ScrollReveal>
             <button
                type="submit"
-               className="dark:bg-purple-600dark:text-purple-200 flex w-full items-center justify-center gap-2 rounded-xl border border-purple-300 bg-purple-300 py-3 text-purple-600 disabled:opacity-50 dark:border-purple-400 dark:bg-purple-500 dark:text-white"
+               className="dark:bg-purple-600dark:text-purple-200 flex w-full items-center justify-center gap-2 rounded-xl border border-purple-300 bg-purple-300 py-3 text-purple-600 enabled:cursor-pointer disabled:opacity-50 dark:border-purple-400 dark:bg-purple-500 dark:text-white"
                disabled={isSubmitting}
             >
                <BiSend size={24} />
