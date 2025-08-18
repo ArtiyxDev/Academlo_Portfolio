@@ -76,9 +76,11 @@ export default function ContactSection({
                   </p>
                </span>
 
-               {socialLinks.map((link) => (
-                  <SocialLink key={link.name} {...link} />
-               ))}
+               <div className="flex flex-col gap-2 sm:flex-row">
+                  {socialLinks.map((link) => (
+                     <SocialLink key={link.name} {...link} />
+                  ))}
+               </div>
             </ScrollReveal>
          </ScrollReveal>
       </section>
