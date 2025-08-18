@@ -33,7 +33,7 @@ export default function PortfolioTopCard({
             <p className="font-semibold dark:text-white">{title}</p>
             <div className="flex items-center justify-between text-gray-600 dark:text-gray-300">
                <p className="text-xs">{description}</p>
-               <BiNavigation size={18} />
+               <BiNavigation size={18} className="hover:cursor-pointer" />
             </div>
          </div>
       </div>
