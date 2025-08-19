@@ -16,7 +16,7 @@ interface PortfolioSectionProps extends HtmlHTMLAttributes<'section'> {
 
 export default function PortfolioSection({
    className = '',
-   id = 'projects',
+   id = 'portfolio',
 }: PortfolioSectionProps) {
    const { t } = useLanguage();
    const [showCaseIndex, setShowCaseIndex] = useState<
