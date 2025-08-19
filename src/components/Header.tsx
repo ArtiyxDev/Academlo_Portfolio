@@ -115,7 +115,7 @@ export default function Header({ className = '' }: HeaderProps) {
                      {[
                         [t('nav.home'), '/#'],
                         [t('nav.about'), '/#about'],
-                        [t('nav.projects'), '/#projects'],
+                        [t('nav.portfolio'), '/#portfolio'],
                         [t('nav.contact'), '/#contact'],
                      ].map(([label, href], index) => (
                         <motion.li
